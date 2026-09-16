@@ -29,7 +29,7 @@ jobs:
         run: |
           cd "$PROJECT_DIR"
           chmod +x gradlew
-          ./gradlew assembleDebug
+          sh gradlew assembleDebug
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
